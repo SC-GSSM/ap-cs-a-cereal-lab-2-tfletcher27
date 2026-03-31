@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class CerealRunnerTest
 {
@@ -81,8 +83,7 @@ public class CerealRunnerTest
                 "question 4 should check Cocoa Puffs");
 
         assertTrue(
-            source.toLowerCase().contains("/* Question 4 Answer"),
+            source.toLowerCase().contains("/* question 4 answer"),
             "question 4 should include a written comment in CerealRunner.java");
     }
 }
-       
